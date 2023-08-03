@@ -8,6 +8,7 @@ export default new Router()
   .use(nextRoutes)
   .match('/edgio-api/:path*', {
     caching: { max_age: '86400s', stale_while_revalidate: '31536000s', bypass_client_cache: true },
+    console.error("Something wong");
     url: {
       url_rewrite: [
         {
