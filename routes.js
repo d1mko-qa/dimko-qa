@@ -5,7 +5,7 @@ import { Router } from '@edgio/core/router'
 
 export default new Router().get('/some-route/:someParam', ({compute}) => {
   compute((req, res) => {
-    console.error("Something wong");
+    console.error("Something wong!");
     // Here you can access the following information about the request:
     // ================================================================
 
